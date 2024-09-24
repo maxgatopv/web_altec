@@ -1,18 +1,404 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage Altec</title>
-    <link href="../src/output.css" rel="stylesheet">
+    <link href="../src/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
     <title>Your Title</title>
-</head>
-<body>
-    <h1 class="text-8xl flex font-bold underline text-red-800">
-        <p> Hello worldasd!</p>
-        <p> Hello world!</p>
-      </h1>
-      <p class="text-green-800 text-7xl"> Hello world!</p>
+  </head>
 
-</body>
+  <body class="font-sukhumvit">
+    <nav class="sticky top-0 z-10 w-full border-b bg-white py-4">
+      <section
+        class="transition-responsive container mx-auto flex items-center justify-between px-5 lg:px-16"
+      >
+        <!--  Logo  -->
+        <div>
+          <a href="#" title="">
+            <img src="images/logo.svg" alt="Logo" class="w-3/4" />
+          </a>
+        </div>
+
+        <!--  Links - desktop  -->
+        <div>
+          <ul
+            class="mx-1 flex flex-1 items-center justify-evenly space-x-12 text-primary *:flex [&_li]:font-bold"
+          >
+            <li>
+              <a class="underline-offset-4 hover:underline" href="#">หน้าแรก</a>
+            </li>
+            <li>
+              <a class="underline-offset-4 hover:underline" href="#">สินค้า</a>
+            </li>
+            <li>
+              <a class="underline-offset-4 hover:underline" href="#"
+                >การรับประกัน</a
+              >
+            </li>
+            <li>
+              <a class="underline-offset-4 hover:underline" href="#"
+                >สั่งซื้อสินค้า</a
+              >
+            </li>
+
+            <li class="text-black">
+              <p>ติดต่อเรา 1277</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sm:basis-10/12 lg:w-auto lg:basis-1/5">
+          <div
+            class="flex justify-center overflow-hidden rounded-lg border border-gray-300 duration-500 hover:border-primary focus:border-primary"
+            tabindex="0"
+          >
+            <span class="flex items-center justify-center px-3 text-gray-500">
+              <!-- Search Icon (SVG) -->
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input
+              type="text"
+              placeholder="ค้นหาสินค้า..."
+              onfocus="this.parentElement.parentElement.focus();"
+              class="flex-1 border-none px-1 py-2 text-sm outline-none focus:ring-0"
+            />
+          </div>
+        </div>
+      </section>
+    </nav>
+
+    <main>
+      <!-- {/* Dummy Standard */}-->
+      <div class="bg-blue-50">
+        <div
+          class="transition-responsive container mx-auto px-8 text-center lg:px-16"
+        >
+          <h1 class="text-primary">มาตรฐานของเรา</h1>
+          <div
+            class="grid grid-cols-1 gap-5 py-5 *:space-y-4 *:rounded-3xl *:bg-white *:p-12 lg:grid-cols-3 [&_img]:mx-auto [&_img]:object-cover [&_p]:text-gray-500"
+          >
+            <div>
+              <img src="images/dummy-standard-icon-1.png" alt="standard1" />
+              <div class="space-y-2">
+                <b>ประสิทธิภาพ</b>
+                <p>
+                  ผ่านการทดสอบจากองค์กรชั้นนำ
+                  ในด้านคุณภาพการใช้งานที่มีประสิทธิภาพ
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src="images/dummy-standard-icon-2.png" alt="standard2" />
+              <div class="space-y-2">
+                <b>จัดส่งรวดเร็ว</b>
+                <p>
+                  จัดส่งถึงมือคุณอย่างรวดเร็วด้วยบริการขนส่งชั้นนำจาก
+                  TopvalueExpress, Kerry Express, CJ Logistics และ ไปรษณีย์ไทย
+                </p>
+              </div>
+            </div>
+            <div>
+              <img src="images/dummy-standard-icon-3.png" alt="standard3" />
+              <div class="space-y-2">
+                <b>ประหยัดไฟ</b>
+                <p>
+                  ผ่านเกณฑ์ประสิทธิภาพพลังงาน ตามโครงการฉลากประหยัดไฟเบอร์ 5
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- {/* Contact us */}-->
+      <div class="transition-responsive container mx-auto mb-4">
+        <div class="flex flex-wrap justify-center gap-3 space-x-4 p-5">
+          <div class="flex items-center divide-x *:px-2">
+            <h4 class="font-semibold text-primary">ติดตามเรา</h4>
+            <img src="images/logo.svg" alt="logo-alectric" class="size-14" />
+          </div>
+          <div class="content-center space-x-2">
+            <a href="#">
+              <button class="btn-social">
+                <i class="fa-brands fa-facebook"></i>
+              </button>
+            </a>
+            <a href="#">
+              <button class="btn-social">
+                <i class="fa-brands fa-line"></i>
+              </button>
+            </a>
+            <a href="#">
+              <button class="btn-social">
+                <i class="fa-brands fa-youtube"></i>
+              </button>
+            </a>
+            <a href="#">
+              <button class="btn-social">
+                <i class="fa-brands fa-instagram"></i>
+              </button>
+            </a>
+            <a href="#">
+              <button class="btn-social">
+                <i class="fa-brands fa-x-twitter"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- {/* About us */} -->
+        <div
+          class="transition-responsive mx-auto max-w-md overflow-hidden bg-white shadow-md md:max-w-6xl"
+        >
+          <div class="md:flex">
+            <div class="md:flex-1">
+              <img
+                src="images/switchflex-new-670x440.jpg"
+                alt="Modern building architecture"
+                class="h-48 w-full object-cover md:h-full"
+              />
+            </div>
+            <div
+              class="p-4 md:w-2/5 md:flex-initial md:px-16 [&_p]:text-sm [&_p]:text-gray-500"
+            >
+              <div class="space-y-3 divide-y-2">
+                <div class="mb-5">
+                  <p>เกี่ยวกับ</p>
+                  <h4 class="mb-5 mt-3 block text-primary">
+                    บริษัท สวิทซ เฟลคซ จำกัด
+                  </h4>
+                  <p>
+                    ก่อตั้งขึ้นเมื่อปี 2005
+                    โดยกลุ่มวิศวกรที่มีความเชี่ยวชาญในงานเครื่องจักรโดยเฉพาะ
+                    และดำเนินธุรกิจนำเข้าและส่งออกเครื่องจักร
+                    ทั้งขนาดเล็กและขนาดใหญ่สำหรับงานอุตสาหกรรม จนกระทั่งในปี
+                    2019 คณะผู้ก่อตั้งบริษัท
+                    ได้เล็งเห็นถึงโอกาสในการนำเครื่องจักรและเทคโนโลยี
+                    มาพัฒนาต่อยอดเพื่อผลิตเป็นเครื่องใช้ไฟฟ้าในครัวเรือน
+                  </p>
+                  <a href="#">
+                    <button class="btn-primary mt-6">ดูเพิ่มเติม</button>
+                  </a>
+                </div>
+                <div class="pt-6">
+                  <p class="pb-4">ไปยังเว็บไซต์</p>
+                  <a
+                    href="https://switchflex.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="https://alectric.asia/media/wysiwyg/homepage/aboutus/switchflex-logo.svg"
+                      alt="switchflex"
+                      class=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- {/* Footer */}-->
+    <footer class="bg-primaryDark">
+      <div
+        class="transition-responsive container mx-auto px-8 text-white lg:px-16"
+      >
+        <div class="flex flex-wrap gap-5 border-b py-12 lg:gap-0">
+          <div class="flex w-full flex-wrap lg:w-3/6 xl:w-3/5">
+            <div class="mb-3 w-full space-y-5 sm:w-3/6">
+              <b>ติดต่อ</b>
+              <ul
+                class="*:mb-4 [&_li]:flex [&_li]:items-start [&_li]:space-x-2"
+              >
+                <li>
+                  <i class="fa-solid fa-location-dot mt-1"></i>
+                  <p>
+                    บริษัท สวิทซเฟลคซ จำกัด <br />
+                    เลขที่ 30/119 หมู่ 1 ต.โคกขาม <br />
+                    อ.เมือง จ.สมุทรสาคร 74000
+                  </p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-clock mt-1"></i>
+                  <p>
+                    จันทร์ - เสาร์ <br />
+                    9:00 - 17:00 , <br />
+                    ปิดทำการวันอาทิตย์
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full space-y-4 sm:w-2/6">
+              <b>ตัวแทนจำหน่าย</b>
+              <div>
+                <p>
+                  สนใจสั่งซื้อสินค้าเป็นจำนวนมาก
+                  หรือสมัครเป็นตัวแทนจำหน่ายได้ที่
+                </p>
+                <p>โทร. 1277</p>
+                <p>E-mail: Service@switchflex.com</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex w-full justify-around lg:w-3/6 xl:w-2/5 [&_a]:flex [&_a]:space-x-2"
+          >
+            <div class="flex-1 space-y-5">
+              <b>สั่งซื้อ</b>
+              <ul class="space-y-4">
+                <li>
+                  <a
+                    href="https://topvalue.com/brands/alectric"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="images/site-topvalue.svg"
+                      alt="Topvalue"
+                      class="me-3 ms-2 w-5"
+                    />
+                    <p>Topvalue.com</p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://shopee.co.th/alectric_officialstore"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="images/site-shopee.svg"
+                      alt="Shopee"
+                      class="me-2"
+                    />
+                    <p>Shopee</p>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.lazada.co.th/shop/alectric-officialstore/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="images/site-lazada.svg"
+                      alt="Lazada"
+                      class="me-2"
+                    />
+                    <p>Lazada</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/site-jd.svg"
+                      alt="JD Central"
+                      class="me-2"
+                    />
+                    <p>JD Central</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex-1 space-y-5">
+              <b>ติดตาม</b>
+              <ul class="flex space-x-2">
+                <li>
+                  <a href="#">
+                    <button class="btn-social-footer">
+                      <i class="fa-brands fa-facebook"></i>
+                    </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <button class="btn-social-footer">
+                      <i class="fa-brands fa-line"></i>
+                    </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <button class="btn-social-footer">
+                      <i class="fa-brands fa-youtube"></i>
+                    </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <button class="btn-social-footer">
+                      <i class="fa-brands fa-instagram"></i>
+                    </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <button class="btn-social-footer">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </button>
+                  </a>
+                </li>
+              </ul>
+              <!-- <ul class="space-y-4">
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-facebook my-auto pe-2"></i>
+                      <p>facebook</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-line my-auto pe-2"></i>
+                      <p>Line</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-youtube my-auto pe-2"></i>
+                      <p>Youtube</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-instagram my-auto pe-2"></i>
+                      <p>Instagram</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                  </li>
+                </ul> -->
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap py-3">
+          <div class="w-full content-center lg:w-1/5">
+            <!-- <Image
+                class="mx-auto lg:mx-0"
+                width={120}
+                height={50}
+                src=""
+                alt="swf"
+              /> -->
+          </div>
+          <div class="mb-7 flex-1 text-center *:p-5">
+            <p>Copyright © 2013-present Magento, Inc. All rights reserved.</p>
+            <a href="#"> เงื่อนไขการใช้งาน นโยบายส่วนบุคคล </a>
+          </div>
+          <div class="hidden lg:flex lg:w-1/5"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
