@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #003a76;
+}
+
+@layer components{
+  a{
+    @apply font-medium
+  }
+  b{
+    @apply font-semibold
+  }
+}
+
+@layer components{
+  .btn-primary {
+    @apply rounded-full border-2 border-primary bg-primary px-3 py-2 text-sm text-white hover:bg-white hover:text-primary
+  }
+  .btn-social {
+    @apply rounded-full border-2 border-primary bg-primary px-2 py-2 text-sm text-white hover:ring-1 hover:ring-primary 
+  }
+}
