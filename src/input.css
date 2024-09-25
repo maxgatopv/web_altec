@@ -11,6 +11,14 @@
       url("/fonts/sukhumvit/SukhumvitSet-Text.woff2") format("woff2"),
       url("/fonts/sukhumvit/SukhumvitSet-Text.woff") format("woff");
   }
+  @font-face {
+    font-family: "Sukhumvit";
+    font-style: normal;
+    font-weight: 700;
+    src:
+      url("/fonts/sukhumvit/SukhumvitSet-Bold.woff2") format("woff2"),
+      url("/fonts/sukhumvit/SukhumvitSet-Bold.woff") format("woff");
+  }
 
   /* h1 {
     @apply text-7xl font-bold;
@@ -18,16 +26,13 @@
 }
 
 @layer components {
+  .transition-responsive {
+    @apply transition-all duration-200 md:duration-200 lg:duration-200;
+  }
   .btn-primary {
-    @apply rounded-full border-2 border-primary bg-primary px-3 py-2 text-sm text-white hover:bg-white hover:text-primary;
+    @apply transition-responsive rounded-full border-2 border-primary bg-primary px-3 py-2 text-sm text-white [&_i]:transition;
   }
   .btn-social {
-    @apply rounded-full border-2 border-primary bg-primary size-10 pt-1 text-sm text-white hover:ring-1 hover:ring-primary;
-  }
-  .btn-social-footer {
-    @apply rounded-full border-2 border-white bg-white size-10 pt-1  text-primary hover:ring-1 hover:ring-white;
-  }
-  .transition-responsive {
-    @apply transition-all duration-200 md:duration-200 lg:duration-200
+    @apply transition-responsive size-10 rounded-full hover:ring-4;
   }
 }
