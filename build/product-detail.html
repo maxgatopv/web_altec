@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products | Altec</title>
+    <title>Product Detail | Altec</title>
     <link href="../src/output.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="images/favicon_ALTEC.png" />
     <link
@@ -133,149 +133,165 @@
     </nav>
 
     <main class="container mx-auto mb-16 block space-y-16">
-      <div
-        class="my-5 grid grid-cols-2 gap-3 md:grid-cols-3 md:px-5 lg:mx-[5%] lg:px-20"
-      >
-        <!-- card -->
-        <div
-          class="rounded-2xl bg-white p-1 text-center transition duration-500 hover:-translate-y-1"
-        >
-          <img
-            class="rounded-t-xl object-cover"
-            src="/build/images/product-1.jpg"
-            alt=""
-          />
-          <div class="my-3 space-y-2 px-2 md:space-y-3 md:px-6">
-            <p class="line-clamp-2 text-sm">
-              ALTEC หม้อทอดไร้น้ำมัน กระจกใส 360° ความจุ 2 ลิตร รุ่น Z-PF3 -
-              รับประกันสินค้า 3 ปี
-            </p>
-            <b>฿ 4,990</b>
-            <div class="flex justify-center space-x-1">
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <p>5.0</p>
+      <!-- Info -->
+      <div class="transition-responsive my-1 rounded-lg bg-white mx-1 lg:mx-[10%]">
+        <div class="transition-responsive flex flex-wrap">
+          <!-- Image -->
+          <div class="md:basis-2/5">
+            <div class="px-3">
+              <img class="w-full" src="images/product-1.jpg" alt="product" />
+            </div>
+            <div class="flex space-x-3 p-3">
+              <div class="w-1/4">
+                <img
+                  src="images/product-1.jpg"
+                  alt="product"
+                  class="rounded-lg"
+                />
+              </div>
+              <div class="w-1/4 rounded-lg ring ring-blue-200">
+                <img
+                  src="images/product-1.jpg"
+                  alt="product"
+                  class="rounded-lg"
+                />
+              </div>
+              <div class="w-1/4">
+                <img
+                  src="images/product-1.jpg"
+                  alt="product"
+                  class="rounded-lg"
+                />
+              </div>
+              <div class="w-1/4">
+                <img
+                  src="images/product-1.jpg"
+                  alt="product"
+                  class="rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Info detail -->
+          <div class="flex-1 divide-y p-5 *:py-7">
+            <div>
+              <h4>
+                ALTEC หม้อทอดไร้น้ำมัน กระจกใส 360° ความจุ 2 ลิตร รุ่น Z-PF3 -
+                รับประกันสินค้า 3 ปี
+              </h4>
+              <div class="flex items-center divide-x *:px-2">
+                <div class="flex justify-center space-x-1">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+                <p>5.0</p>
+                <div>
+                  <small class="rounded-md bg-slate-100 p-1 text-gray-500">
+                    SKU: 13000000
+                  </small>
+                </div>
+              </div>
             </div>
             <div>
-              <a href="/build/product-detail.html">
-                <button
-                  class="btn-primary w-full rounded-lg bg-primaryDark hover:bg-white hover:text-primary md:w-4/5"
-                >
-                  เรียนรู้เพิ่มเติม
-                </button>
-              </a>
+              <h3
+                class="rounded-lg bg-slate-100 py-[10%] text-center text-primary"
+              >
+                4990 <small>฿</small>
+              </h3>
             </div>
 
-            <div class="flex items-center justify-center space-x-1">
-              <i class="fa-solid fa-location-dot mt-1"></i>
-              <small class="text-gray-500">สถานที่จัดจำหน่าย</small>
+            <!-- Online -->
+            <div class="transition-responsive container mx-auto">
+              <b>ตัวแทนจำหน่าย</b>
+              <div
+                class="grid grid-cols-2 justify-center gap-2 p-3 md:grid-cols-4"
+              >
+                <a
+                  class="transition hover:-translate-y-1"
+                  href="https://topvalue.com/brands/altec"
+                  target="_blank"
+                >
+                  <img
+                    class="rounded-lg border bg-white"
+                    src="images/shop-topvalue.svg"
+                    alt="shop-topvalue"
+                  />
+                </a>
+                <a
+                  class="transition hover:-translate-y-1"
+                  href="https://shopee.co.th/altec_officialth"
+                  target="_blank"
+                >
+                  <img
+                    class="rounded-lg border bg-white"
+                    src="images/shop-shopee.svg"
+                    alt="shop-shopee"
+                  />
+                </a>
+                <a
+                  class="transition hover:-translate-y-1"
+                  href="https://www.lazada.co.th/shop/alectric-officialstore/"
+                >
+                  <img
+                    class="rounded-lg border bg-white"
+                    src="images/shop-lazada.svg"
+                    alt="shop-topvalue"
+                  />
+                </a>
+                <a class="transition hover:-translate-y-1" href="#">
+                  <img
+                    class="rounded-lg border bg-white"
+                    src="images/shop-jd.svg"
+                    alt="shop-topvalue"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <!-- card -->
-        <div
-          class="rounded-2xl bg-white p-1 text-center transition duration-500 hover:-translate-y-1"
-        >
-          <img
-            class="rounded-t-xl object-cover"
-            src="/build/images/product-1.jpg"
-            alt=""
-          />
-          <div class="my-3 space-y-2 px-2 md:space-y-3 md:px-6">
-            <p class="line-clamp-2 text-sm">
-              ALTEC หม้อทอดไร้น้ำมัน กระจกใส 360° ความจุ 2 ลิตร รุ่น Z-PF3 -
-              รับประกันสินค้า 3 ปี
-            </p>
-            <b>฿ 4,990</b>
-            <div class="flex justify-center space-x-1">
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <p>5.0</p>
+
+        <!-- Cms -->
+        <div class="p-5 pb-5">
+          <details open class="rounded-lg border p-5">
+            <summary class="hover:cursor-pointer">
+              <span class="">รายละเอียด</span>
+            </summary>
+            <div class="leading-relaxed">
+              <p class="pt-4">
+                ALTEC หม้อทอดไร้น้ำมัน 3 ลิตร รุ่น Z-PF4 - รับประกัน 3 ปี <br />
+                หม้อทอดไร้น้ำมัน ขนาด 3 ลิตร ปลอดภัยไร้กังวล
+                เพราะทำจากวัสดุอย่างดี ตะแกรงและหม้อทอด ชั้นเคลือบ Non-Stick
+                น้ำมันไม่กระเด็นและประหยัดพลังงาน อุณหภูมิการทอดปรับได้ระหว่าง
+                80° ถึง 200° สามารถตั้งเวลาสูงสุดได้ถึง 30 นาที
+                อบด้วยลมร้อนและไอน้ำ ช่วยให้อาหารได้รสชาติและไม่แข็งกระด้าง
+                ควบคุมอุณหภูมิและเวลาอย่างแม่นยำ
+                <br /><br />
+                <b>คุณสมบัติ</b>
+                <br />
+                อบด้วยลมร้อนและไอน้ำ<br />
+                ช่วยให้อาหารได้รสชาติและไม่แข็งกระด้าง<br />
+                หากเป็นอาหารแช่แข็งวอร์มเครื่องก่อน 3 นาที <br />
+                รูปแบบการควบคุม ปุ่มหมุนปรับอุณหภูมิและเวลา <br />
+                วัสดุท่อทำความร้อน สเตนเลส <br />
+                วัสดุตะแกรงและหม้อทอด ชั้นเคลือบ <br />
+                Non-Stick ความจุ 3 ลิตร <br />
+                กำลังไฟ 1200W <br />
+                แรงดันไฟ 220V <br />
+                ความถี่ 50Hz <br />
+                สายไฟยาว 0.85 m. <br />
+                ขนาด 246x307x303 mm. <br />
+                น้ำหนัก 2.85 kg. <br /><br />
+                <b>รับประกันสินค้า</b> <br />
+                รับประกันสินค้า 3 ปี By SwitchFlex Call Center : 02-0266225<br /><br />
+                <b>รูปภาพสินค้า</b> <br />
+                <img src="images/product-1.jpg" alt="product" />
+              </p>
             </div>
-            <button
-              class="btn-primary w-full rounded-lg bg-primaryDark hover:bg-white hover:text-primary md:w-4/5"
-            >
-              เรียนรู้เพิ่มเติม
-            </button>
-            <div class="flex items-center justify-center space-x-1">
-              <i class="fa-solid fa-location-dot mt-1"></i>
-              <small class="text-gray-500">สถานที่จัดจำหน่าย</small>
-            </div>
-          </div>
-        </div>
-        <!-- card -->
-        <div
-          class="rounded-2xl bg-white p-1 text-center transition duration-500 hover:-translate-y-1"
-        >
-          <img
-            class="rounded-t-xl object-cover"
-            src="/build/images/product-1.jpg"
-            alt=""
-          />
-          <div class="my-3 space-y-2 px-2 md:space-y-3 md:px-6">
-            <p class="line-clamp-2 text-sm">
-              ALTEC หม้อทอดไร้น้ำมัน กระจกใส 360° ความจุ 2 ลิตร รุ่น Z-PF3 -
-              รับประกันสินค้า 3 ปี
-            </p>
-            <b>฿ 4,990</b>
-            <div class="flex justify-center space-x-1">
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <p>5.0</p>
-            </div>
-            <button
-              class="btn-primary w-full rounded-lg bg-primaryDark hover:bg-white hover:text-primary md:w-4/5"
-            >
-              เรียนรู้เพิ่มเติม
-            </button>
-            <div class="flex items-center justify-center space-x-1">
-              <i class="fa-solid fa-location-dot mt-1"></i>
-              <small class="text-gray-500">สถานที่จัดจำหน่าย</small>
-            </div>
-          </div>
-        </div>
-        <!-- card -->
-        <div
-          class="rounded-2xl bg-white p-1 text-center transition duration-500 hover:-translate-y-1"
-        >
-          <img
-            class="rounded-t-xl object-cover"
-            src="/build/images/product-1.jpg"
-            alt=""
-          />
-          <div class="my-3 space-y-2 px-2 md:space-y-3 md:px-6">
-            <p class="line-clamp-2 text-sm">
-              ALTEC หม้อทอดไร้น้ำมัน กระจกใส 360° ความจุ 2 ลิตร รุ่น Z-PF3 -
-              รับประกันสินค้า 3 ปี
-            </p>
-            <b>฿ 4,990</b>
-            <div class="flex justify-center space-x-1">
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-              <p>5.0</p>
-            </div>
-            <button
-              class="btn-primary w-full rounded-lg bg-primaryDark hover:bg-white hover:text-primary md:w-4/5"
-            >
-              เรียนรู้เพิ่มเติม
-            </button>
-            <div class="flex items-center justify-center space-x-1">
-              <i class="fa-solid fa-location-dot mt-1"></i>
-              <small class="text-gray-500">สถานที่จัดจำหน่าย</small>
-            </div>
-          </div>
+          </details>
         </div>
       </div>
     </main>

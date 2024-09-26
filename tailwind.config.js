@@ -31,7 +31,7 @@ module.exports = {
       },
       bounce: {
         "0%, 100%": {
-          transform: "translateY(-20%)",
+          transform: "translateY(-10%)",
           animationTimingFunction: "cubic-bezier(0, 0, 0, 0)",
         },
         "50%": {

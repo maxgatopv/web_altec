@@ -35,12 +35,4 @@
   .btn-social {
     @apply transition-responsive size-10 rounded-full hover:ring-4;
   }
-
-  .parallax {
-    @apply relative flex justify-center align-middle 
-  }
-
-  #imgTop {
-    /* @apply absolute  */
-  }
 }
