@@ -18,14 +18,14 @@
       <section
         class="transition-responsive container mx-auto flex items-center justify-between space-x-2 px-5 lg:px-16"
       >
-        <!--  Logo  -->
-        <div class="md:me-5 lg:hidden">
-          <a href="#" title="">
+        <!-- Icon hamberger -->
+        <div id="hamburger-button" class="me-2 lg:hidden">
+          <button href="#" title="">
             <i class="fa-solid fa-bars w-1/4"></i>
-          </a>
+          </button>
         </div>
 
-        <!-- Icon hamberger -->
+        <!-- Logo  -->
         <div class="w-3/4 lg:w-auto">
           <a href="#" title="">
             <img src="images/logo.svg" alt="Logo" />
@@ -98,17 +98,24 @@
         </div>
       </section>
 
+      <!-- <div
+        id="mobile-menu"
+        class="left-0 w-full hidden transform bg-white transition-transform duration-300 ease-in-out"
+      > -->
       <div
-        class="left-0 hidden w-full transform bg-white transition-transform duration-300 ease-in-out lg:hidden"
+        id="mobile-menu"
+        class="fixed inset-y-0 left-0 w-full -translate-x-full transform bg-white shadow-lg transition-transform duration-300 ease-in-out md:w-1/2 lg:hidden"
       >
-        <div class="container mx-auto">
-          <button
-            class="absolute right-0 top-0 mr-4 mt-4"
-            onClick="{toggleMenu}"
-          >
-            <!-- <i class="fa-solid fa-xmark"></i> -->
+        <div class="flex justify-between p-6">
+          <img src="images/logo.svg" alt="Logo" />
+
+          <button>
+            <i class="fa-solid fa-x"></i>
           </button>
-          <ul class="flex flex-col space-y-5 p-6 text-primary *:border-b">
+        </div>
+
+        <div class="container mx-auto">
+          <ul class="flex flex-col space-y-5 px-6 text-primary *:border-b">
             <li>
               <a href="#"> หน้าแรก </a>
             </li>
@@ -190,7 +197,7 @@
       <!-- {/* Dummy showcase */}-->
       <div class="transition-responsive container mx-auto space-y-20 lg:px-16">
         <div
-          class="bg-dark items-center lg:rounded-xl p-8 text-white md:flex lg:px-20"
+          class="bg-dark items-center p-8 text-white md:flex lg:rounded-xl lg:px-20"
         >
           <div
             class="flex flex-1 scale-90 justify-center py-6 transition duration-500 hover:-rotate-2"
@@ -561,3 +568,16 @@
     </footer>
   </body>
 </html>
+
+<script>
+  const hamburgerBtn = document.getElementById("hamburger-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const toggleMenu = () => {
+    mobileMenu.classList.toggle("-translate-x-full");
+    mobileMenu.classList.toggle("translate-x-0");
+    // hamburgerBtn.classList.toggle("toggle-btn");
+  };
+
+  hamburgerBtn.addEventListener("click", toggleMenu);
+  mobileMenu.addEventListener("click", toggleMenu);
+</script>

@@ -35,4 +35,5 @@
   .btn-social {
     @apply transition-responsive size-10 rounded-full hover:ring-4;
   }
+
 }
