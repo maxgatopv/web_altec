@@ -60,7 +60,7 @@ module.exports = {
     },
     animation: {
       slideUp: "slideUp 0.5s ease-in-out forwards",
-      slideDown: "slideDown 0.5s ease-in-out forwards",
+      slideDown: "slideDown 1s ease-in-out forwards",
       bgLeft: "bgLeft 0.5s ease-in-out forwards",
       bounce: "bounce 3s infinite",
       spin: "spin 1s linear infinite",
